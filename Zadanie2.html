@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script>
+function fn()
+{
+    s1 = '<h3>'
+    s2 = '</h3>'
+    st = prompt('Введите ваш класс:')
+    cl = parseFloat(st)
+    if (cl < 5 && cl >= 1){
+        w = window.open("", "","width = 400, height = 400")
+        words = 'Вы в начальной школе'
+        fot = '<IMG src = Low.png>'
+        w.document.write(s1 + words + s2)
+        w.document.write(fot)
+    }
+    else if (cl >= 5 && cl < 9){
+        w = window.open("", "","width = 400, height = 400")
+        words = 'Вы в средней школе'
+        fot = '<IMG src = Medium.png>'
+        w.document.write(s1 + words + s2)
+        w.document.write(fot)
+    }
+    else if (cl >= 9 && cl <= 11){
+        w = window.open("", "","width = 400, height = 400")
+        words = 'Вы в старшей школе'
+        fot = '<IMG src = High.png>'
+        w.document.write(s1 + words + s2)
+        w.document.write(fot)
+    }
+    else{
+        alert('Вы либо дурак, либо прикидываетесь..')
+    }
+}
+
+</script>
+<body>
+<input type="button" value="Открыть" onclick="fn()">
+<input type="button" value="Закрыть" onclick="w.close()">
+</body>
+</html>

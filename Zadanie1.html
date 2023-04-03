@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+     s1 = '<h3>'
+    s2 = '</h3>'
+    st = prompt('Введите ваш класс:')
+    cl = parseFloat(st)
+    if (cl < 5 && cl >= 1){
+        words = 'Вы в начальной школе'
+        document.write(s1+words+s2)
+    }
+    else if (cl >= 5 && cl < 9){
+        words = 'Вы в средней школе'
+        document.write(s1+words+s2)
+    }
+    else if (cl >= 9 && cl <= 11){
+        words = 'Вы в старшей школе'
+        document.write(s1+words+s2)
+    }
+    else{
+        words = 'Вы либо дурак, либо прикидываетесь..'
+        document.write(s1+words+s2)
+    }
+
+
+
+</script>
+</body>
+</html>
